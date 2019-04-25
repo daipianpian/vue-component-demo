@@ -260,17 +260,17 @@ npm install vue-component-demo -save
 
 ```
 <template>
-	<div>
-		<div>demo</div>
-		<vue-component-demo :name="npmName"></vue-component-demo>
-	</div>
+  <div>
+	<div>在组件里引用该插件</div>
+	<vue-component-demo :name="npmName"></vue-component-demo>
+  </div>
 </template>
 <script type="text/ecmascript-6">
-	import vueComponentDemo from 'vue-component-demo'
-	export default {
-		components:{
-		    vueComponentDemo
-		}
+  import vueComponentDemo from 'vue-component-demo'
+  export default {
+    components:{
+	  vueComponentDemo
 	}
+  }
 </script>
 ```
