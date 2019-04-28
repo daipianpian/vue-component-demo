@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="name">{{name}}</p>
+    <p class="name" @click="nameClick(num)">{{name}}</p>
   </div>
 </template>
 
@@ -16,6 +16,11 @@
       }
     },
     methods: {
+    },
+    methods: {
+      nameClick(num) {
+        this.$emit('demoClick', num)
+      }
     }
   }
 </script>
